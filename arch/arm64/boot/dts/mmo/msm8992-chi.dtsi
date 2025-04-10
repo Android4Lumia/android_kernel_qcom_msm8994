@@ -155,3 +155,8 @@
 &pmi8994_charger {
 	qcom,battery-data = <&talkman_batterydata>;
 };
+
+&pcie0 {
+	/delete-property/ qcom,vbg-opt;
+	/delete-property/ qcom,ep-wakeirq;
+};

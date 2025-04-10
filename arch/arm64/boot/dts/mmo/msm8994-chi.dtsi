@@ -115,3 +115,7 @@
 &qusb_phy {
 	status = "ok";
 };
+
+&pcie1 {
+	/delete-property/ qcom,ep-wakeirq;
+};
